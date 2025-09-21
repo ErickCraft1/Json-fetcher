@@ -1,5 +1,5 @@
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from "node:fs";
-import { ApiName, generateType } from "./createApi.mjs";
+import { ApiName, generateType } from "./createApi.mts";
 import { log } from "node:console";
 import { join } from "node:path";
 
@@ -55,7 +55,7 @@ export async function fetchJson(URL: string): Promise<any> {
 
     // Importa dinámicamente el esquema generado
     // const schemaModule = await import(`../schemas/${validate}-schemas.mjs`);
-    const schemaModule = await import(join("..", "schemas", folderName, `${validate}-schemas.mjs`));
+    const schemaModule = await import(join("..", "schemas", folderName, `${validate}-schemas.mts`));
     const schemaName = `${capitalize(validate)}Schema`;
     const schema = schemaModule[schemaName];
     if (!schema) throw new Error(`No se encontró el esquema: ${schemaName}`);

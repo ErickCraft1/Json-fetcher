@@ -1,6 +1,6 @@
 import { log } from "console";
-import { rl } from "./services/createApi.mjs";
-import { fetchJson } from "./services/fetchData.mjs";
+import { rl } from "./services/createApi.mts";
+import { fetchJson } from "./services/fetchData.mts";
 
 const API_URL = await rl.question("Enter the API URL: ");
 rl.close();
