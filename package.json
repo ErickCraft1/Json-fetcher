@@ -1,0 +1,30 @@
+{
+  "name": "json-fetcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --import ./dev-loader.mjs src/index.mts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickCraft1/Json-fetcher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErickCraft1/Json-fetcher/issues"
+  },
+  "homepage": "https://github.com/ErickCraft1/Json-fetcher#readme",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "quicktype-core": "^23.2.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "zod": "^4.1.9"
+  }
+}
