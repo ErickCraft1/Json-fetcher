@@ -3,17 +3,17 @@
     "module": "nodenext",
     "target": "esnext",
     "types": ["node"],
-    "allowImportingTsExtensions":true,
-    "emitDeclarationOnly": true,
-
+    
     // Other Outputs
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-
+    
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
+    "allowImportingTsExtensions":true,
+    "emitDeclarationOnly": true,
 
     // Recommended Options
     "strict": true,
