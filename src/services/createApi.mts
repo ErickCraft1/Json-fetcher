@@ -5,7 +5,8 @@ export const rl = createInterface({
     input: process.stdin,
     output: process.stdout
 })
-export const ApiName = await rl.question("Enter the API Name: \n")
+// export const ApiName = await rl.question("Enter the API Name: \n")
+export const ApiName = "Pokemon"
 export async function generateType(jsonStrign: string, lang: "typescript" | "typescript-zod" = "typescript-zod"): Promise<string> {
     const jsonInput = jsonInputForTargetLanguage("typescript")
     await jsonInput.addSource({ name: ApiName, samples: [jsonStrign] })
